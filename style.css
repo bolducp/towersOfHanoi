@@ -5,7 +5,7 @@ body{
 #board{
   width:auto;
   height: 500px;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 #displayOutput{
@@ -26,7 +26,14 @@ body{
 
 #piece4{
   width: 200px;
+}
 
+#displayMoves{
+  text-align: center;
+  font-size: 34px;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Lobster', cursive;
 }
 
 .shell{
@@ -38,7 +45,6 @@ body{
   margin: auto;
   background-color: LightYellow;
 }
-
 
 .towerBase{
   height:auto;

@@ -3,6 +3,7 @@
 var towerSelected = false;
 var selectedTowerId;
 var $selectedPiece;
+var countMoves = 0;
 
 $(document).ready(init);
 
@@ -29,6 +30,8 @@ function towerClicked(event){
             $(this).prepend($selectedPiece);
             towerSelected = false;
             $selectedPiece.removeClass('selected');
+            countMoves += 1;
+            $('#displayMoves').text("Moves: " + countMoves);
 
         // invalid move
         } else {
@@ -43,7 +46,6 @@ function towerClicked(event){
       towerSelected = true;
       selectedTowerId = this.id;
   }
-  console.log("towerSelected", towerSelected, "selectedTowerId", selectedTowerId, "selectedPiece", $selectedPiece)
   checkGameWon();
 }
 
