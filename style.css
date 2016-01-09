@@ -1,0 +1,61 @@
+body{
+  background-color: LightSteelBlue;
+}
+
+#board{
+  width:auto;
+  height: 500px;
+  margin-left: 10%;
+}
+
+#displayOutput{
+  text-align: center;
+  font-size: 34px;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Lobster', cursive;
+}
+
+#piece2{
+  width: 120px;
+}
+
+#piece3{
+  width: 160px;
+}
+
+#piece4{
+  width: 200px;
+
+}
+
+.shell{
+  height: 300px;
+  width:300px;
+  border: 2px solid black;
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  background-color: LightYellow;
+}
+
+
+.towerBase{
+  height:auto;
+  width: 250px;
+  min-height: 45px;
+  position:absolute;
+  bottom: 0;
+  text-align: -webkit-center;
+}
+
+.piece{
+  height: 40px;
+  width: 80px;
+  background-color: RosyBrown;
+  border: 1px solid black;
+}
+
+.selected {
+  background-color: DarkSlateBlue;
+}
